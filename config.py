@@ -8,9 +8,9 @@ BASE_URL = "http://books.toscrape.com"
 START_URL = "http://books.toscrape.com/catalogue/category/books/science_22/index.html"
 
 # --- Request Settings ---
-REQUEST_DELAY_MIN = 1.5   # seconds (min random delay between requests)
-REQUEST_DELAY_MAX = 3.5   # seconds (max random delay between requests)
-REQUEST_TIMEOUT   = 10    # seconds before a request times out
+REQUEST_DELAY_MIN = 1.5   
+REQUEST_DELAY_MAX = 3.5    
+REQUEST_TIMEOUT   = 10    
 MAX_RETRIES       = 3     # how many times to retry a failed request
 
 # --- Output ---
