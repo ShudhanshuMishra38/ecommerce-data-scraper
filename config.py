@@ -1,3 +1,4 @@
+#Single source of truth principle
 import os
 from dotenv import load_dotenv
 
