@@ -34,7 +34,7 @@ def parse_books(html: str) -> list[Book]:
     logger.info("Successfully parsed %d / %d products.", len(books), len(products))
     return books
 
-
+# Per item error handling
 def _parse_single_product(product, index: int) -> Optional[Book]:
     """
     Extracts name, price, and availability from a single product card.
@@ -52,7 +52,7 @@ def _parse_single_product(product, index: int) -> Optional[Book]:
         logger.warning("Skipping product at index %d due to error: %s", index, e)
         return None
 
-
+# Pagination
 def get_next_page_url(html: str, base_url: str) -> Optional[str]:
     """
     Finds the 'next' pagination button and returns the full URL.
