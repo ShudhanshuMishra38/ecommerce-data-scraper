@@ -6,7 +6,7 @@ from utils.logger import get_logger
 
 logger = get_logger(__name__)
 
-
+# More readable than dictionary and also supports error handling
 @dataclass
 class Book:
     """Represents a single scraped book product."""
